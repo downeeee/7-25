@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/fullpage.css">
+
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/fullpage.js"></script>
+
+    <script lang="java">
+        $(function () {
+            $("#box").fullpage({
+                sectionsColor:["red","orange","pink"] ,
+                slidesNavigation:true , /* slidesColor:["purple","green","black","gray","magenta","blue","tomato"] */
+                slidesNavPosition:"top"
+            })
+        })
+    </script>
+
+    <style type="text/css">
+        #box2{text-align: center; color: white; font-size: 50px;}
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <div class="section" id="box1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut in velit cum quaerat aliquam. Tenetur, totam
+                error voluptatibus illo sit esse a odio ad, et nostrum magnam fugiat, quo vitae.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo totam facere dolorum quibusdam sunt
+                temporibus odio delectus fuga ipsam voluptatibus ratione quasi optio impedit quae, voluptatem unde
+                cumque dignissimos quaerat.</p>
+        </div>
+
+        <div class="section" id="box2">
+            <div class="slide"><h2>slide01</h2></div>
+            <div class="slide"><h2>slide02</h2></div>
+            <div class="slide"><h2>slide03</h2></div>
+            <div class="slide"><h2>slide04</h2></div>
+            <div class="slide"><h2>slide05</h2></div>
+            <div class="slide"><h2>slide06</h2></div>
+            <div class="slide"><h2>slide07</h2></div>
+        </div>
+
+        <div class="section" id="box3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut in velit cum quaerat aliquam. Tenetur, totam
+                error voluptatibus illo sit esse a odio ad, et nostrum magnam fugiat, quo vitae.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo totam facere dolorum quibusdam sunt
+                temporibus odio delectus fuga ipsam voluptatibus ratione quasi optio impedit quae, voluptatem unde
+                cumque dignissimos quaerat.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

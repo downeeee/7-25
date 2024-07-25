@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/fullpage.css">
+
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/fullpage.js"></script>
+
+    <script lang="java">
+        $(function(){
+            $(".box").fullpage({
+                anchors:["ss01" , "ss02" , "ss03" , "ss04"] , menu:".head_inner"
+            })
+        })
+    </script>
+
+    <style type="text/css">
+        *{margin: 0; padding: 0;}
+        ul,li{list-style: none;}
+        a{text-decoration: none; color: inherit;}
+        
+        .header{width: 100%;background-color: rgba(0, 0, 0, 0.774);position: fixed; z-index: 100;}
+        .head_inner{width: 30%; height: 100px;/*  background-color: rgba(0, 0, 0, 0.774); */ display: flex; justify-content: space-between; margin: 0 auto; line-height: 100px;
+                    z-index: 30;}
+        .head_inner li{}
+        .head_inner li a{font-size: 15px; font-weight: bold;color: white; }
+        .head_inner li:hover a{color: black; text-shadow: 1px 1px 5px white;}
+
+        #sec01{background-image: url(images/bg1.jpg);}
+        #sec02{background-image: url(images/bg2.jpg);}
+        #sec03{background-image: url(images/bg3.jpg);}
+        #sec04{background-image: url(images/bg4.jpg);}
+
+
+        
+
+        .section{font-size: 30px; color: white; text-align: center;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header">
+            <ul class="head_inner">
+                <li><a href="#ss01">Menu1</a></li>
+                <li><a href="#ss02">Menu2</a></li>
+                <li><a href="#ss03">Menu3</a></li>
+                <li><a href="#ss04">Menu4</a></li>
+            </ul><!-- head_inner -->
+
+        </header><!-- header -->
+        <section class="box">
+            <div class="section" id="sec01">
+                <a href="#"><h1>contents01</h1></a>
+            </div>
+            <div class="section" id="sec02">
+                <a href="#"><h1>contents02</h1></a>
+            </div>
+            <div class="section" id="sec03">
+                <div class="slide"  id="s03"><h1>contents03</h1></div>
+                <div class="slide"  id="s04"><h1>slide02</h1></div>
+                <div class="slide"  id="s05"><h1>slide03</h1></div>
+                <div class="slide"  id="s06"><h1>slide04</h1></div>
+            </div>
+            <div class="section" id="sec04">
+                <a href="#"><h1>contents04</h1></a>
+            </div>
+            
+        </section>
+    </div><!-- wrap -->
+</body>
+</html>
